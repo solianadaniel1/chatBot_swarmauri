@@ -1,4 +1,4 @@
-Here’s a styled README file that matches the design in your image:
+Here’s the revised README file with the installation commands presented in bullet points without bash formatting:
 
 ---
 
@@ -25,18 +25,23 @@ Before running the project, make sure you have the following installed:
 
 2. **Required Python Libraries**  
    Use `pip` to install the necessary libraries:
-   - PyMuPDF for PDF text extraction.
-   - python-docx for extracting text from Word files.
-   - pytesseract to interface with Tesseract.
-   - Gradio for building the chatbot interface.
-   - OpenAI for AI-powered responses.
-   - Groq for optimizing model inference.
-   - Swarmauri and python-dotenv for environment configuration and performance.
+   - Install PyMuPDF for PDF text extraction.
+   - Install python-docx for extracting text from Word files.
+   - Install Gradio version 3.39.0.
+   - Uninstall the latest version of Typer, then install a compatible version:
+     - `pip uninstall typer`
+     - `pip install "typer<0.10.0,>=0.3.0"`
+   - Check for any dependency issues: `pip check`
+   - Upgrade pip: `python.exe -m pip install --upgrade pip`
+   - Install Swarmauri and python-dotenv:
+     - `pip install swarmauri[full]==0.4.1`
+     - `pip install python-dotenv`
+   - Install Groq.
+   - Install OpenAI version 0.28 and upgrade to the latest version:
+     - `pip install openai==0.28`
+     - `pip install --upgrade openai`
 
-3. **Upgrading pip**  
-   Ensure that you have the latest version of pip installed and check for any dependency issues.
-
-4. **Virtual Environment Setup**  
+3. **Virtual Environment Setup**  
    It is recommended to use a virtual environment for managing dependencies:
    - Create and activate a virtual environment suitable for your operating system.
 
@@ -46,12 +51,3 @@ Once everything is installed and set up:
 1. Run the chatbot script to start the Gradio interface.
 2. The chatbot will allow users to upload images, PDFs, or Word documents, extract text from them, and receive responses generated using OpenAI.
 
-## **Contributing**
-Feel free to contribute to the project. Fork the repository, make changes, and submit a pull request.
-
-## **License**
-This project is licensed under the MIT License.
-
----
-
-This version is styled and organized similarly to the image you shared. Let me know if you need further adjustments!
