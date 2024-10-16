@@ -1,6 +1,4 @@
-Here’s the revised README file with the installation commands presented in bullet points without bash formatting:
 
----
 
 # **AI-Powered Chatbot with Text Extraction Capabilities**
 
