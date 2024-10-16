@@ -175,11 +175,11 @@ with gr.Blocks() as demo:
     with gr.Row():  # Row layout for system context and feedback
         system_context_input = gr.Textbox(label="System Context")  # System context input
         feedback_input = gr.Textbox(label="User Feedback")  # Feedback input
-    submit_button = gr.Button("Submit")  # Submit button
-    clear_button = gr.Button("Clear")  # Clear button
-    response_output = gr.Textbox(label="Response")  # Response output field
-    feedback_response_output = gr.Textbox(label="Feedback Response")  # Feedback response output field
-    history_output = gr.Textbox(label="Conversation History")  # History output field
+        submit_button = gr.Button("Submit")  # Submit button
+        clear_button = gr.Button("Clear")  # Clear button
+        response_output = gr.Textbox(label="Response")  # Response output field
+        feedback_response_output = gr.Textbox(label="Feedback Response")  # Feedback response output field
+        history_output = gr.Textbox(label="Conversation History")  # History output field
 
     # Define the event handlers
     submit_button.click(converse, 
